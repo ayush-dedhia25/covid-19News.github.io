@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ff7675;
+  padding: 15px 20px;
+  text-align: center;
+  color: White;
+}
+
+.navbar .nav-brand {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 1.3rem;
+  color: White;
+}
+
+.navbar .nav-subtitle {
+  font-family: 'Roboto Condensed';
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.notice {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Manrope', sans-serif;
+  padding: 0 10px;
+}
+
+.notice h4 {
+  font-weight: 400;
+}
+
+.notice p {
+  border-top: 1px solid #ccc;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.notice p span {
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  height: 60px;
+  background-color: White;
+  margin: 20px auto;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+  color: White;
+}
+
+.cases {
+  background-color: #1dd1a1;
+}
+
+.confirmed {
+  background-color: #FF8A65;
+}
+
+.recovered {
+  background-color: #4FC3F7;
+}
+
+.deaths {
+  background-color: #ee5253;
+}
+
+.container .news-heading {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.container span {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ads {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Merienda', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #6c5ce7;
+}
