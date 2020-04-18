@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../fonts.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .heading {
+      width: 100%;
+      background-color: #c56cf0;
+      padding: 20px 0;
+      color: White;
+      font-family: 'Montserrat';
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .heading h3 {
+      margin-bottom: 10px;
+    }
+    
+    .info {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    ul {
+      font-family: 'Source Sans Pro';
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    
+    ul li {
+      text-align: justify;
+      list-style-type: circle;
+      margin: 10px 0;
+    }
+    
+    ul li:last-child {
+      margin-bottom: 0;
+    }
+    
+    button#backBtn {
+      background: none;
+      border: none;
+      background-color: #ff6b81;
+      padding: 10px 20px;
+      margin-top: 15px;
+      color: White;
+      font-family: 'Source Sans Pro';
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+    }
+    
+    button#backBtn .cust {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h3>About Covid-19 Pandemic</h3>
+    <i class="fas fa-arrow-down"></i>
+  </div>
+  
+  <div class="info">
+    <ul>
+      <h2>Summary</h2>
+      <li>
+        A pneumonia of unknown cause detected in Wuhan, China was first reported to the WHO Country Office in China on 31 December 2019.
+      </li>
+      <li>
+        WHO is working 24/7 to analyse data, provide advice, coordinate with partners, help countries prepare, increase supplies and manage expert networks.
+      </li>
+      <li>
+        The outbreak was declared a Public Health Emergency of International Concern on 30 January 2020.
+      </li>
+      <li>
+        The international community has asked for US$675 million to help protect states with weaker health systems as part of its Strategic Preparedness and Response Plan.
+      </li>
+      <li>
+        On 11 February 2020, WHO announced a name for the new coronavirus disease: COVID-19.
+      </li>
+      <li>
+        To stay up to date, follow @DrTedros and @WHO on Twitter, read WHO’s daily situation reports and news releases, and watch our regular press conferences.
+      </li>
+    </ul>
+    
+    <button id="backBtn">
+      <i class="fas fa-arrow-left cust"></i>
+      Go Back
+    </button>
+  </div>
+ 
+  <script src="https://kit.fontawesome.com/7713b48aac.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script>
+    $("#backBtn").click(function () {
+      window.location.replace("../index.html");
+    });
+  </script>
+</body>
+</html>

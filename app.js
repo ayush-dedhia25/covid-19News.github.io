@@ -26,13 +26,8 @@ $(document).ready(function () {
   }
   fetchCovidNews();
   
-  $.ajax({
-    type: 'GET',
-    url: './utils.txt',
-    success: function(data) {
-      var api = data.split('api = ')[1];
-      alert(api);
-    }
+  $("#more-info").click(function () {
+    window.location.replace("./views/news.html");
   });
 	
 });

@@ -103,21 +103,23 @@ body {
   outline: none;
 }
 
-.map-div {
-  margin: 0 auto;
-  font-family: 'Manrope', sans-serif;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.map-div h4 {
-  margin-bottom: 10px;
-}
-
-.map-div #map {
+.more {
   width: 90%;
-  height: 200px;
+  background-color: #a4b0be;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: White;
+  font-family: 'Manrope', sans-serif;
   margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+}
+
+.more h4 {
+  letter-spacing: 1px;
 }
 
 footer#footer {

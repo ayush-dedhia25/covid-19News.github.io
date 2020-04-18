@@ -22,59 +22,46 @@
 	<h4 class="news-heading">Cases</h4>
 	<span>|</span>
 	<span id="cases">Loading...</span>
-	<!--<i class="fas fa-angle-right click"></i>-->
   </div>
   
   <div class="container confirmed">
 	<h4 class="news-heading">Confirmed</h4>
 	<span>|</span>
 	<span id="confirmed">Loading...</span>
-	<!--<i class="fas fa-angle-right"></i>-->
   </div>
   
   <div class="container recovered">
 	<h4 class="news-heading">Recovered</h4>
 	<span>|</span>
 	<span id="recovered">Loading...</span>
-	<!--<i class="fas fa-angle-right"></i>-->
   </div>
   
   <div class="container deaths">
 	<h4 class="news-heading">Deaths</h4>
 	<span>|</span>
 	<span id="deaths">Loading...</span>
-	<!--<i class="fas fa-angle-right"></i>-->
   </div>
   
   <div class="divider"></div>
   
-  <div class="map-div">
-    <h4>See the map for more info.</h4>
-    <div id="map"></div>
+  <div class="more" id="more-info">
+    <h4>Learn more about covid-19</h4>
+    <i class="fas fa-arrow-right"></i>
   </div>
   
   <footer id="footer">
     <span>Follow us on</span>
     <div class="s-icons">
       <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-google-plus-g"></i>
-      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram" onclick="reportText()"></i>
+      <i class="fab fa-twitter" onclick="reportText(this)"></i>
+      <i class="fab fa-google-plus-g" onclick="reportText(this)"></i>
+      <i class="fab fa-youtube" onclick="reportText(this)"></i>
     </div>
   </footer>
   
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/7713b48aac.js" crossorigin="anonymous"></script>
-  <script>
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById("map") , {
-        center: { lat: 19.0760, lng: 72.8777 },
-        zoom: 13
-    });
-  }
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUwT4UR5Wnhglu5GtpHxcARkK9Na9uePA&callback=initMap"></script>
   <script src="./app.js"></script>
 </body>
 </html>
