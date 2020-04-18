@@ -59,9 +59,9 @@ body {
   background-color: White;
   margin: 20px auto;
   border-radius: 3px;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 3fr 1fr 1fr;
+  justify-content: space-between;
   padding: 0 20px;
   box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
   color: White;
@@ -85,6 +85,7 @@ body {
 }
 
 .container .news-heading {
+  width: 60%;
   font-family: 'Montserrat';
   font-weight: 400;
 }
@@ -93,13 +94,53 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.ads {
+.divider {
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+  outline: none;
+}
+
+.map-div {
+  margin: 0 auto;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.map-div h4 {
+  margin-bottom: 10px;
+}
+
+.map-div #map {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+footer#footer {
   width: 100%;
+  padding: 20px;
+  background-color: #74b9ff;
+  color: White;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Merienda', cursive;
-  font-size: 3rem;
+  flex-direction: column;
+  font-family: 'Merienda';
+}
+
+footer#footer .s-icons {
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
-  color: #6c5ce7;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
 }
