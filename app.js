@@ -37,11 +37,41 @@ $(document).ready(function () {
       $("#deaths").html(err);
     }
     
-    fetchCovidNews(state);
+    if (state !== "select") {
+      var progress = "Loading...";
+      
+      $("#cases").html(progress);
+      $("#confirmed").html(progress);
+      $("#recovered").html(progress);
+      $("#deaths").html(progress);
+      
+       fetchCovidNews(state);
+    }
   });
   
   $("#more-info").click(function () {
     window.location.replace("./views/news.html");
+  });
+  
+  $(".s-icons a").click(function () {
+    var net = $(this).attr("value");
+    
+    switch(net) {
+      case "facebook":
+        alert("Sorry, this action link is not available right now.");
+        break;
+      case "instagram":
+        alert("Sorry, this action link is not available right now.");
+        break;
+      case "twitter":
+        alert("Sorry, this action link is not available right now.");
+        break;
+      case "google-plus":
+        alert("Sorry, this action link is not available right now.");
+        break;
+      default:
+        break;
+    }
   });
 	
 });
