@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  
-  function fetchCovidNews() {
+ 
+  function fetchCovidNews(state) {
 	try {
-	  fetch("https://covid19india.p.rapidapi.com/getStateData/MH", {
+	  fetch("https://covid19india.p.rapidapi.com/getStateData/"+state, {
 		"method": "GET",
 		"headers": {
 		  "x-rapidapi-host": "covid19india.p.rapidapi.com",
@@ -12,7 +12,7 @@ $(document).ready(function () {
 		.then(function(response) {
 		  return response.json();
 		})
-		.then(function(data) {
+		.then(function (data) {
 			var { id, active, value, name, confirmed, recovered, deaths, isoCode } = data.response;
 			$("#cases").html(active);
 			$("#confirmed").html(confirmed);
@@ -24,7 +24,21 @@ $(document).ready(function () {
 		  throw err;
     }
   }
-  fetchCovidNews();
+  
+  $("#selectState").change(function () {
+    var state = $(this).val();
+    var err = "Select State";
+    
+    if (state == "select") {
+      alert("Please select the state!");
+      $("#cases").html(err);
+      $("#confirmed").html(err);
+      $("#recovered").html(err);
+      $("#deaths").html(err);
+    }
+    
+    fetchCovidNews(state);
+  });
   
   $("#more-info").click(function () {
     window.location.replace("./views/news.html");

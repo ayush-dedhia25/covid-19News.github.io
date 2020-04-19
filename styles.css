@@ -39,6 +39,7 @@ body {
 
 .notice h4 {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .notice p {
@@ -51,6 +52,33 @@ body {
 
 .notice p span {
   font-weight: bold;
+}
+
+.drop-down {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: 'Roboto Condensed';
+}
+
+.drop-down h3 {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.drop-down #selectState {
+  background: none;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 3px;
+  width: 50%;
+}
+
+.drop-down #selectState:focus {
+  outline: none;
 }
 
 .container {
@@ -132,6 +160,7 @@ footer#footer {
   align-items: center;
   flex-direction: column;
   font-family: 'Merienda';
+  padding: 20px 0;
 }
 
 footer#footer .s-icons {
