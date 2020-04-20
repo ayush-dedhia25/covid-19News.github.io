@@ -11,6 +11,13 @@
       box-sizing: border-box;
     }
     
+    .divider {
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid #eee;
+      margin: 15px auto;
+    }
+    
     .heading {
       width: 100%;
       background-color: #c56cf0;
@@ -32,20 +39,29 @@
       margin: 0 auto;
     }
     
-    ul {
+    .info ul {
       font-family: 'Source Sans Pro';
       margin: 0 auto;
       margin-top: 10px;
     }
     
-    ul li {
+    .info ul li {
       text-align: justify;
       list-style-type: circle;
       margin: 10px 0;
     }
     
-    ul li:last-child {
+    .info ul li span {
+      font-weight: 600;
+    }
+    
+    .info ul li:last-child {
       margin-bottom: 0;
+    }
+    
+    .experts {
+      font-family: 'Source Sans Pro';
+      margin-bottom: 10px;
     }
     
     button#backBtn {
@@ -53,7 +69,7 @@
       border: none;
       background-color: #ff6b81;
       padding: 10px 20px;
-      margin-top: 15px;
+      margin: 15px 0;
       color: White;
       font-family: 'Source Sans Pro';
       font-weight: bold;
@@ -101,6 +117,54 @@
         To stay up to date, follow @DrTedros and @WHO on Twitter, read WHO’s daily situation reports and news releases, and watch our regular press conferences.
       </li>
     </ul>
+    
+    <div class="divider"></div>
+    
+    <ul class="measures">
+      <h3>How to prevent yourself from COVID-19:</h3>
+      <li><span>STAY</span> home</li>
+      <li><span>KEEP</span> a safe distance</li>
+      <li><span>WASH</span> your hands often</li>
+      <li><span>COVER</span> your cough</li>
+      <li><span>SICK?</span> Call the helpline</li>
+    </ul>
+   
+    <div class="divider"></div>
+    
+    <ul class="prevent-spreading">
+      <h3>How to prevent spread of COVID-19:</h3>
+      <li>
+        Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+      </li>
+      <li>
+        Maintain a safe distance from anyone who is coughing or sneezing.
+      </li>
+      <li>
+        Don’t touch your eyes, nose or mouth.
+      </li>
+      <li>
+        If you have a fever, a cough, and difficulty breathing, seek medical attention. Call in advance.
+      </li>
+      <li>
+        Stay home if you feel unwell.
+      </li>
+      <li>
+        Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+      </li>
+      <li>
+        Follow the directions of your local health authority.
+      </li>
+      <li>
+        Avoiding unneeded visits to medical facilities allows healthcare systems to operate more effectively, therefore protecting you and others.
+      </li>
+    </ul>
+   
+    <div class="divider"></div>
+   
+    <h3 class="experts">See what experts say on it!</h3>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/qF42gZVm1Bo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div class="divider"></div>
     
     <button id="backBtn">
       <i class="fas fa-arrow-left cust"></i>
