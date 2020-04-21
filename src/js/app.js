@@ -58,18 +58,19 @@ $(document).ready(function () {
     
     switch(net) {
       case "facebook":
-        alert("Sorry, this action link is not available right now.");
+        alert("isAvailable: No \nMedia-Type: Facebook \nError-Code: 500");
         break;
       case "instagram":
-        alert("Sorry, this action link is not available right now.");
+        alert("isAvailable: No\nMedia-Type: Instagram \nError-Code: 500");
         break;
       case "twitter":
-        alert("Sorry, this action link is not available right now.");
+        alert("isAvailable: No\nMedia-Type: Twitter \nError-Code: 500");
         break;
       case "google-plus":
-        alert("Sorry, this action link is not available right now.");
+        alert("isAvailable: No\nMedia-Type: Google-Plus \nError-Code: 500");
         break;
       default:
+        alert("isAvailable: Yes\nMedia-Type: Youtube IN. \nError-Code: 200 \n\nClick <Ok> to open youtube.in");
         break;
     }
   });

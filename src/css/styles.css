@@ -83,7 +83,7 @@ body {
 
 .container {
   width: 90%;
-  height: 60px;
+  height: 50px;
   background-color: White;
   margin: 20px auto;
   border-radius: 3px;
@@ -161,6 +161,10 @@ footer#footer {
   flex-direction: column;
   font-family: 'Merienda';
   padding: 20px 0;
+}
+
+footer#footer span {
+  font-size: 1.2rem;
 }
 
 footer#footer .s-icons {
