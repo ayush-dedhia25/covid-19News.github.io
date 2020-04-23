@@ -45,7 +45,8 @@ $(document).ready(function () {
       $("#recovered").html(progress);
       $("#deaths").html(progress);
       
-       fetchCovidNews(state);
+      
+      fetchCovidNews(state);
     }
   });
   
@@ -59,20 +60,19 @@ $(document).ready(function () {
     switch(net) {
       case "facebook":
         alert("isAvailable: No \nMedia-Type: Facebook \nError-Code: 500");
-        break;
+      break;
       case "instagram":
         alert("isAvailable: No\nMedia-Type: Instagram \nError-Code: 500");
-        break;
+      break;
       case "twitter":
         alert("isAvailable: No\nMedia-Type: Twitter \nError-Code: 500");
-        break;
+      break;
       case "google-plus":
         alert("isAvailable: No\nMedia-Type: Google-Plus \nError-Code: 500");
-        break;
+      break;
       default:
         alert("isAvailable: Yes\nMedia-Type: Youtube IN. \nError-Code: 200 \n\nClick <Ok> to open youtube.in");
-        break;
+      break;
     }
   });
-	
 });
