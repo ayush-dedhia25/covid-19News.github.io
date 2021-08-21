@@ -1,185 +1,185 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-  background-color: #eee;
+   background-color: #eee;
 }
 
 .navbar {
-  width: 100%;
-  background-color: #ff7675;
-  padding: 15px 20px;
-  text-align: center;
-  color: White;
+   width: 100%;
+   background-color: #ff7675;
+   padding: 15px 20px;
+   text-align: center;
+   color: White;
 }
 
 .navbar .nav-brand {
-  text-decoration: none;
-  font-family: 'Montserrat';
-  font-size: 1.3rem;
-  color: White;
+   text-decoration: none;
+   font-family: 'Montserrat';
+   font-size: 1.3rem;
+   color: White;
 }
 
 .navbar .nav-subtitle {
-  font-family: 'Roboto Condensed';
-  letter-spacing: 1px;
-  margin-top: 5px;
+   font-family: 'Roboto Condensed';
+   letter-spacing: 1px;
+   margin-top: 5px;
 }
 
 .notice {
-  width: 100%;
-  text-align: center;
-  margin-top: 15px;
-  font-family: 'Manrope', sans-serif;
-  padding: 0 10px;
+   width: 100%;
+   text-align: center;
+   margin-top: 15px;
+   font-family: 'Manrope', sans-serif;
+   padding: 0 10px;
 }
 
 .notice h4 {
-  font-weight: 400;
-  margin-bottom: 10px;
+   font-weight: 400;
+   margin-bottom: 10px;
 }
 
 .notice p {
-  border-top: 1px solid #ccc;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding-top: 10px;
+   border-top: 1px solid #ccc;
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 10px;
+   padding-top: 10px;
 }
 
 .notice p span {
-  font-weight: bold;
+   font-weight: bold;
 }
 
 .drop-down {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 10px;
-  font-family: 'Roboto Condensed';
+   width: 90%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0 auto;
+   margin-top: 10px;
+   font-family: 'Roboto Condensed';
 }
 
 .drop-down h3 {
-  letter-spacing: 1px;
-  font-weight: 400;
+   letter-spacing: 1px;
+   font-weight: 400;
 }
 
 .drop-down #selectState {
-  background: none;
-  border: 1px solid rgba(0,0,0,0.5);
-  padding: 5px;
-  border-radius: 3px;
-  width: 50%;
+   background: none;
+   border: 1px solid rgba(0,0,0,0.5);
+   padding: 5px;
+   border-radius: 3px;
+   width: 50%;
 }
 
 .drop-down #selectState:focus {
-  outline: none;
+   outline: none;
 }
 
 .container {
-  width: 90%;
-  height: 50px;
-  background-color: White;
-  margin: 20px auto;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
-  color: White;
-  user-select: none;
+   width: 90%;
+   height: 50px;
+   background-color: White;
+   margin: 20px auto;
+   border-radius: 3px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+   color: White;
+   user-select: none;
 }
 
 .cases {
-  background-color: #1dd1a1;
+   background-color: #1dd1a1;
 }
 
 .confirmed {
-  background-color: #FF8A65;
+   background-color: #FF8A65;
 }
 
 .recovered {
-  background-color: #4FC3F7;
+   background-color: #4FC3F7;
 }
 
 .deaths {
-  background-color: #ee5253;
+   background-color: #ee5253;
 }
 
 .container .news-heading {
-  width: 60%;
-  font-family: 'Montserrat';
-  font-weight: 400;
+   width: 60%;
+   font-family: 'Montserrat';
+   font-weight: 400;
 }
 
 .container span {
-  font-family: 'Roboto Condensed', sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .divider {
-  width: 90%;
-  height: 1px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  border-top: 1px solid #ccc;
-  outline: none;
+   width: 90%;
+   height: 1px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   border-top: 1px solid #ccc;
+   outline: none;
 }
 
 .more {
-  width: 90%;
-  background-color: #a4b0be;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: White;
-  font-family: 'Manrope', sans-serif;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  border-radius: 3px;
-  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+   width: 90%;
+   background-color: #a4b0be;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: White;
+   font-family: 'Manrope', sans-serif;
+   margin: 0 auto;
+   margin-bottom: 15px;
+   border-radius: 3px;
+   box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
 }
 
 .more h4 {
-  letter-spacing: 1px;
+   letter-spacing: 1px;
 }
 
 footer#footer {
-  width: 100%;
-  padding: 20px;
-  background-color: #74b9ff;
-  color: White;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Merienda';
-  padding: 20px 0;
+   width: 100%;
+   padding: 20px;
+   background-color: #74b9ff;
+   color: White;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: 'Merienda';
+   padding: 20px 0;
 }
 
 footer#footer span {
-  font-size: 1.2rem;
+   font-size: 1.2rem;
 }
 
 footer#footer .s-icons {
-  width: 200px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 5px;
-  font-size: 1.4rem;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
+   width: 200px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   align-items: center;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 5px;
+   font-size: 1.4rem;
+   border-top: 1px solid #eee;
+   padding-top: 10px;
 }
 
 footer#footer .s-icons a {
-  color: White;
+   color: White;
 }

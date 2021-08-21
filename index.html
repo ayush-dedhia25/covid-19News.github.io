@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Get details about covid-19 pendamic for free. Please check it out! By Ayush Productions">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./biohazard-solid.ico" type="image/x-icon" />
-  <title>Covid-19 News</title>
-  <link rel="stylesheet" href="./src/css/fonts.css" />
-  <link rel="stylesheet" href="./src/css/styles.css" />
+   <meta charset="utf-8" />
+   <meta name="description" content="Get details about covid-19 pendamic for free. Please check it out! By Ayush Productions">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" href="./biohazard-solid.ico" type="image/x-icon" />
+   <title>Covid-19 News</title>
+   <link rel="stylesheet" href="./src/css/fonts.css" />
+   <link rel="stylesheet" href="./src/css/styles.css" />
 </head>
 <body>
-  <nav class="navbar">
-	<a href="#" class="nav-brand">Covid-19 News</a>
-	<p class="nav-subtitle">Created by Ayush's Productions</p>
-  </nav>
-  
-  <div class="notice">
-	<h4>This values are live coming from an active server! It may vary according to the server data.</h4>
-  </div>
-  
-  <div class="divider"></div>
-  
-  <div class="drop-down">
-    <h3>State:</h3>
-    <select id="selectState">
-      <option value="select">Select State</option>
-      <option value="AP">Andhra Pradesh</option>
-      <option value="AR">Arunachal Pradesh</option>
-      <option value="AS">Assam</option>
-      <option value="BR">Bihar</option>
-      <option value="CT">Chhattisgarh</option>
-      <option value="GA">Goa</option>
-      <option value="GJ">Gujarat</option>
-      <option value="HR">Haryana</option>
-      <option value="HP">Himachal Pradesh</option>
-      <option value="JK">Jammu and Kashmir</option>
-      <option value="JH">Jharkhand</option>
-      <option value="KA">Karnataka</option>
-      <option value="KL">Kerala</option>
-      <option value="MP">Madhya Pradesh</option>
-      <option value="MH">Maharashtra</option>
-      <option value="MN">Manipur</option>
-      <option value="ML">Meghalaya</option>
-      <option value="MZ">Mizoram</option>
-      <option value="NL">Nagaland</option>
-      <option value="OR">Odisha (Orissa)</option>
-      <option value="PB">Punjab</option>
-      <option value="RJ">Rajasthan</option>
-      <option value="SK">Sikkim</option>
-      <option value="TN">Tamil Nadu</option>
-      <option value="TR">Tripura</option>
-      <option value="UP">Uttar Pradesh</option>
-      <option value="UT">Uttarakhand</option>
-      <option value="WB">West Bengal</option>
-    </select>
-  </div>
-  
-  <div class="container cases">
-	<h4 class="news-heading">New Cases</h4>
-	<span>|</span>
-	<span id="cases">Select State</span>
-  </div>
-  
-  <div class="container confirmed">
-	<h4 class="news-heading">Confirmed</h4>
-	<span>|</span>
-	<span id="confirmed">Select State</span>
-  </div>
-  
-  <div class="container recovered">
-	<h4 class="news-heading">Recovered</h4>
-	<span>|</span>
-	<span id="recovered">Select State</span>
-  </div>
-  
-  <div class="container deaths">
-	<h4 class="news-heading">Deaths Till Date</h4>
-	<span>|</span>
-	<span id="deaths">Select State</span>
-  </div>
-  
-  <div class="divider"></div>
-  
-  <div class="more" id="more-info">
-    <h4>Learn more about covid-19</h4>
-    <i class="fas fa-arrow-right"></i>
-  </div>
-  
-  <footer id="footer">
-    <span>Follow us on</span>
-    <div class="s-icons">
-      <a href="#" value="facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" value="instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" value="twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" value="google-plus"><i class="fab fa-google-plus-g"></i></a>
-      <a href="https://www.youtube.com/EXPANSIONTRICKS" value=""><i class="fab fa-youtube"></i></a>
-    </div>
-  </footer>
-  
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/7713b48aac.js" crossorigin="anonymous"></script>
-  <script src="./src/modules/api.js"></script>
-  <script src="./src/js/app.js"></script>
+   <nav class="navbar">
+      <a href="#" class="nav-brand">Covid-19 News</a>
+      <p class="nav-subtitle">
+         Created by Ayush's Productions
+      </p>
+   </nav>
+
+   <div class="notice">
+      <h4>This values are live coming from an active server! It may vary according to the server data.</h4>
+   </div>
+
+   <div class="divider"></div>
+
+   <div class="drop-down">
+      <h3>State:</h3>
+      <select id="selectState">
+         <option value="select">Select State</option>
+         <option value="AP">Andhra Pradesh</option>
+         <option value="AR">Arunachal Pradesh</option>
+         <option value="AS">Assam</option>
+         <option value="BR">Bihar</option>
+         <option value="CT">Chhattisgarh</option>
+         <option value="GA">Goa</option>
+         <option value="GJ">Gujarat</option>
+         <option value="HR">Haryana</option>
+         <option value="HP">Himachal Pradesh</option>
+         <option value="JK">Jammu and Kashmir</option>
+         <option value="JH">Jharkhand</option>
+         <option value="KA">Karnataka</option>
+         <option value="KL">Kerala</option>
+         <option value="MP">Madhya Pradesh</option>
+         <option value="MH">Maharashtra</option>
+         <option value="MN">Manipur</option>
+         <option value="ML">Meghalaya</option>
+         <option value="MZ">Mizoram</option>
+         <option value="NL">Nagaland</option>
+         <option value="OR">Odisha (Orissa)</option>
+         <option value="PB">Punjab</option>
+         <option value="RJ">Rajasthan</option>
+         <option value="SK">Sikkim</option>
+         <option value="TN">Tamil Nadu</option>
+         <option value="TR">Tripura</option>
+         <option value="UP">Uttar Pradesh</option>
+         <option value="UT">Uttarakhand</option>
+         <option value="WB">West Bengal</option>
+      </select>
+   </div>
+
+   <div class="container cases">
+      <h4 class="news-heading">New Cases</h4>
+      <span>|</span>
+      <span id="cases">Select State</span>
+   </div>
+
+   <div class="container confirmed">
+      <h4 class="news-heading">Confirmed</h4>
+      <span>|</span>
+      <span id="confirmed">Select State</span>
+   </div>
+
+   <div class="container recovered">
+      <h4 class="news-heading">Recovered</h4>
+      <span>|</span>
+      <span id="recovered">Select State</span>
+   </div>
+
+   <div class="container deaths">
+      <h4 class="news-heading">Deaths Till Date</h4>
+      <span>|</span>
+      <span id="deaths">Select State</span>
+   </div>
+
+   <div class="divider"></div>
+
+   <div class="more" id="more-info">
+      <h4>Learn more about covid-19</h4>
+      <i class="fas fa-arrow-right"></i>
+   </div>
+
+   <footer id="footer">
+      <span>Follow us on</span>
+      <div class="s-icons">
+         <a href="#" value="facebook"><i class="fab fa-facebook-f"></i></a>
+         <a href="#" value="instagram"><i class="fab fa-instagram"></i></a>
+         <a href="#" value="twitter"><i class="fab fa-twitter"></i></a>
+         <a href="#" value="google-plus"><i class="fab fa-google-plus-g"></i></a>
+         <a href="https://www.youtube.com/EXPANSIONTRICKS" value=""><i class="fab fa-youtube"></i></a>
+      </div>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/7713b48aac.js" crossorigin="anonymous"></script>
+   <script src="./src/modules/api.js"></script>
+   <script src="./src/js/app.js"></script>
 </body>
 </html>
